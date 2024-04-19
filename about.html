@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About|CargocontainersTP </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <style>
+
+      body,
+html {
+  font-family: "Arial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  padding: 18px 24px;
+  text-align: left;
+}
+
+.content p {
+  margin-top: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.6em;
+}
+ 
+
+.navigation-bar-container {
+  position: fixed;
+  height: 60px;
+  background: #f3f3f3;
+  z-index: 999;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.logo-container {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.logo-container a,
+.logo-container a:visited {
+  color: #FF0000 ,#990000;
+  font-family: revert-layer;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  z-index: 9999;
+}
+
+.navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  display: block;
+  padding: 0px 20px;
+  line-height: 60px;
+  background: #f3f3f3;
+  color: darkred;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: ;
+  text-decoration: none;
+
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:visited:hover {
+  background: #FBCEB1;
+  color: #darkred;
+}
+
+.navbar ul li ul li {
+  min-width: 190px;
+}
+
+.navbar ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  background: #262626;
+  height: 60px;
+  width: 60px;
+  display: none;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:after,
+#nav-toggle span:before {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span::before {
+  top: -10px;
+}
+
+#nav-toggle.active span {
+  background: transparent;
+}
+
+#nav-toggle.active span:after,
+#nav-toggle.active span:before {
+  top: 0px;
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 790px) {
+  .nav-mobile {
+    display: block;
+  }
+  .navbar {
+    width: 100%;
+    padding: 70px 0px 0px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    float: none;
+  }
+  .navbar ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  .navbar ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter { 
+  color: white;
+}
+
+
+.fa-linkedin {
+  color: white;
+}
+.fa-pinterest {
+  color: white;
+}
+
+  </style>
+  <body style="background-color: ;">
+    <div class="navigation-bar-container">
+      <div class="nav-container">
+        <div class="logo-container">
+          <i><a href="#">CargocontainersTP</a></i>
+        </div>
+        <div class="navbar">
+          <div class="nav-mobile">
+            <a href="#" id="nav-toggle"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="Index.html">HOME</a></li>
+           
+            <li>
+              <a href="#">ABOUT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="About.html">ABOUT </a></li>
+                <li><a href="faq.html">FAQ'S</a></li>
+                <li><a href="process.html">PROCESS</a></li>
+                
+                
+               </ul>
+            </li>
+            <li><a href="product.html">PRODUCT</a></li>
+             <li>
+              <a href="#">CONTACT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="Contact.html">CONTACT (US)</a></li>
+                <li><a href="Contact.html">CONTACT (CA)</a></li>
+                
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\7.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\3.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 6000); // Change image every 5 seconds
+      }
+    </script>
+
+<div style="width: 100%;
+  height: 10px;
+  text-align: center;">
+
+</div> 
+<div style="   margin: auto;
+  width: 90%;">
+<hr class="rounded"><br><br>
+<b style="font-size:30px">Modern. Beautiful. Modular. CargocontainersTP.</b><br>
+<b style="font-size:22px">At CargocontainersTP this isn’t just a catch phrase, it defines everything we do.</b>
+<br><br>
+   <b><p style="font-size:20px">MODERN:</b>-Modern design is an all encompassing philosophy which we define in three main categories.</p>
+  <p style="font-size:20px">Authenticity of materials - At CargocontainersTP we let materials be what they are, not try to look like something else. In the  C-series the shipping container which is both part of the structure  as well as the exterior cladding material. The cedar ceiling is real cedar, and the steel accent panel is a piece of steel that we allow to weather naturally. In a CargocontainersTP what you see is what you get.</p><br>
+     <p style="font-size:20px">Indoor Outdoor Connection - A CargocontainersTP has a lot of glass. The indoor outdoor experience is a defining feature of our design and it means that from your main living space you will feel connected to the outdoors. Whether a vibrant urban setting or a peaceful retreat, part of living in a CargocontainersTP is feeling connected to the place which you choose to live. The defining experience of living in a CargocontainersTP is feeling connected to the outdoors from your living space.</p><br>
+  <p style="font-size:20px">Minimalism - To us minimalism doesn’t mean living in an empty house with one chair, but it does mean living in an efficiently designed home without wasted space. A CargocontainersTP has rooms which are strategically sized, meant to create intimacy and warmth without feeling cramped, but not creating needless square footage. A CargocontainersTP is designed for you to live comfortably and efficiently wherever you choose to place it</p><br>
+  
+<br><br><br>
+<hr>
+<br><br><br>
+  <b><p style="font-size:20px">BEAUTIFUL:</b>-In a CargocontainersTP we made the conscious decision to build exceptionally durable homes which run exclusively on electricity.</p><br>
+  <p style="font-size:20px">Energy Efficiency - At CargocontainersTP we see a sustainable energy future which relies on renewable and clean electricity production to power our lives and our homes. Every CargocontainersTP is equipped with proven all electric systems which allows for renewable energy sources to offset some or all of the energy usage of a CargocontainersTP. </p><br>
+  <p style="font-size:20px">Durability - Every CargocontainersTP is built to stand the test of time. Steel Construction and Corten Steel Cladding means a CargocontainersTP will require less long term maintenance and out live a standard home. The durable nature of a CargocontainersTP means less waste from renovation and eventual demolition of homes.</p><br>
+<br><br><br>
+  </ul>
+  <hr>
+<br><br><br>
+<b><p style="font-size:20px">
+MODULAR:</b>-A modular home is built in a factory. A factory setting allows a CargocontainersTP to be built faster, higher quality, and with less waste than a standard home. </p><br>
+  <p style="font-size:20px">Faster - Without the delays related to weather and other unpredictable events, the speed of construction in a factory is faster and more efficient than you will find in construction outdoors.</p><br>
+  <p style="font-size:20px">Quality - Rigorous quality control in a controlled environment allows for a high quality construction process. Quality control checks are performed at every step of the way to maintain a predictable construction process.</p><br>
+  <p style="font-size:20px">Less Waste - Indoor construction and technologically advanced construction techniques make for a maximally efficient construction process with minimal waste.</p><br>
+<br><br><br>
+
+
+ <hr>
+ </div>
+<div style="width: 100%;
+  height: 100px;
+  text-align: center;">
+
+</div>
+
+ 
+  <img src="C:\Users\HP PRO\3D Objects\pic\yyy.jpg" width="100%" height="400" alt="CargocontainersTP" >
+
+
+
+<div style="width: 100%;
+  height: 150px;
+  text-align: center;">
+
+
+</div>
+
+<footer>
+<div style="width: 100%;
+  height: 220px;
+  text-align: center;
+  
+  background-color: #0C2340;">
+
+
+<br><br>
+
+
+<h5 style=" color:white; ">FOLLOW US</h5>
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+
+
+<h3 style=" color:white;">COPYRIGHT © CargocontainersTP 2024</h3>
+
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+<script> 
+      (function ($) {
+  $(function () {
+
+    $('.navbar ul li a:not(:only-child)').click(function (e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+
+    $('html').click(function () {
+      $('.nav-dropdown').hide();
+    });
+
+    $('#nav-toggle').click(function () {
+      $('.navbar ul').slideToggle();
+    });
+
+    $('#nav-toggle').on('click', function () {
+      this.classList.toggle('active');
+    });
+
+  });
+})(jQuery);
+</script>
+

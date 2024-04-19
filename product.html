@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product|CargocontainersTP </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <style>
+
+	
+    body,
+html {
+  font-family: "Arial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  padding: 18px 24px;
+  text-align: left;
+}
+
+.content p {
+  margin-top: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.6em;
+}
+ 
+
+.navigation-bar-container {
+  position: fixed;
+  height: 60px;
+  background: #f3f3f3;
+  z-index: 999;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.logo-container {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.logo-container a,
+.logo-container a:visited {
+  color: #FF0000 ,#990000
+;
+  font-family: revert-layer;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  z-index: 9999;
+}
+
+.navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  display: block;
+  padding: 0px 20px;
+  line-height: 60px;
+  background: #f3f3f3;
+  color: darkred;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: ;
+  text-decoration: none;
+
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:visited:hover {
+  background: #FBCEB1;
+  color: #darkred;
+}
+
+.navbar ul li ul li {
+  min-width: 190px;
+}
+
+.navbar ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  background: #262626;
+  height: 60px;
+  width: 60px;
+  display: none;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:after,
+#nav-toggle span:before {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span::before {
+  top: -10px;
+}
+
+#nav-toggle.active span {
+  background: transparent;
+}
+
+#nav-toggle.active span:after,
+#nav-toggle.active span:before {
+  top: 0px;
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 790px) {
+  .nav-mobile {
+    display: block;
+  }
+  .navbar {
+    width: 100%;
+    padding: 70px 0px 0px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    float: none;
+  }
+  .navbar ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  .navbar ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter { 
+  color: white;
+}
+
+
+.fa-linkedin {
+  color: white;
+}
+.fa-pinterest {
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+  </style>
+  <body style="background-color: ;">
+  	
+    <div class="navigation-bar-container">
+      <div class="nav-container">
+        <div class="logo-container">
+          <i><a href="#">CargocontainersTP</a></i>
+        </div>
+        <div class="navbar">
+          <div class="nav-mobile">
+            <a href="#" id="nav-toggle"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="Index.html">HOME</a></li>
+           
+            <li>
+              <a href="#">ABOUT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="About.html">ABOUT </a></li>
+                <li><a href="faq.html">FAQ'S</a></li>
+                <li><a href="process.html">PROCESS</a></li>
+                
+                
+              </ul>
+            </li>
+            <li><a href="product.html">PRODUCT</a></li>
+             <li>
+              <a href="#">CONTACT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="Contact.html">CONTACT (US)</a></li>
+                <li><a href="Contact.html">CONTACT (CA)</a></li>                
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\2.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\www.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 6000); // Change image every 5 seconds
+      }
+    </script>
+
+
+
+		<br><br><br><br>
+	
+	</div>
+
+	<h2 style="text-align:center;">CargocontainersTP | STARTING AT $22,440 USD</h2><br><br>
+	<div style="   margin: auto;
+  width: 90%;" 
+  >
+	<hr class="rounded">
+<br><br>
+	<h2 style="text-align:center;">Shipping Container Bars That Set The Bar High</h2>
+
+
+
+	<p style="font-size:20px">Like any good idea, the CargocontainersTP was drafted on a napkin over a few daytime pints. And while the business model around it has taken a variety of turns, the core of it remains the same - a recycled shipping container turned into a portable party. 
+
+It was actually conceived in the middle of a typical Edmonton winter. Each season we all tend to go through the same unfortunate cycle - happiness and excitement for the first snowfall, the buzz of Christmas and New Years ski trips, then a frozen anger as we count the days until Spring. That needed to change, because the weather won't. Stocking it with the help of a couple of our favourite local breweries and dragging the bar to the top of Fortress Mountain in -25°C to throw a party seemed the perfect way to break that cycle. We were right - it was cold, and it was absolutely epic. 
+
+Each day and event is what you make of it, and we hope the Honomobar helps you get the most out of whatever it is that you’re up to. </p>
+<br><br>
+<hr></div>
+<br><br>
+<h2 style="text-align:center;">WHAT BAR IS RIGHT FOR YOU?</h2>
+<div style="   margin: auto;
+  width: 90%;
+  background-color: #f3f3f3;"
+  align="center"><br>
+
+
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\hmmm.jpg" width="100%" height="300px" >
+  <h1>Cargo Container</h1>
+  <p class="price">$30,000</p>
+  <p>The Mainsail - 320-square-foot 40 ft Shipping Container Home with Rooftop Deck, Texas </p>
+
+</div>
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\jjj.jpg" width="100%" height="300px">
+  <h1>Cargo Container</h1>
+  <p class="price"> $100,000</p>
+  <p>Box on the Rox Shipping Container Home + 20ft Container Swimming Pool, Joshua Tree, California</p>
+ 
+</div>
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\a.jpeg" width="100%" height="300px">
+  <h1>Container House</h1>
+  <p class="price">$140,000</p>
+  <p>3000 sq ft Shipping Container House, Chicago (4 containers)</p>
+  
+</div>
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\b.jpeg" width="100%" height="300px" >
+  <h1>Cargo Container</h1>
+  <p class="price">$90,000</p>
+  <p>The Mainsail - 320-square-foot 40 ft Shipping Container Home with Rooftop Deck, Dalas Texas </p>
+
+</div>
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\c.jpeg" width="100%" height="300px">
+  <h1>Cargo Container</h1>
+  <p class="price"> $120,000</p>
+  <p>Box on the Rox Shipping Container Home + 20ft Container Swimming Pool, Miami</p>
+ 
+</div>
+
+<div class="card">
+  <img src="C:\Users\HP PRO\3D Objects\pic\immm.jpg" width="100%" height="300px">
+  <h1>Container House</h1>
+  <p class="price">$140,000</p>
+  <p>3000 sq ft Shipping Container House, Phoenix, Arizona (4 containers)</p>
+  
+</div>
+
+<br><br><br><br><br><br><br>
+
+<div style="width: 100%;
+ 	height: 100px;">
+ 		<a href="contact.html" style=" background-color: #000000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+ ">CONTACT US</a>
+ 	</div></div> 
+<hr class="rounded"><br><br>
+<h2 style="text-align:center;">PROCESS</h2>
+<br>
+<br><br>
+
+<div style="width: 95%;
+ 	 	color:;
+ 	font-size:20px;
+ 	margin: auto;
+background-color:lightgray;
+ "><br>
+ 
+ 	<h2>STANDARD PROCESS: 10-12 WEEKS</h2>
+ 	
+<p font-size:20px><b><u>STEP 1:</b></u> Complete the checklist to confirm your styling and upgrade options</p>
+<p font-size:20px><b><u>STEP 2:</b></u>CargocontainersTP Representative to Confirm Shipping and Install Options </p>
+<p font-size:20px><b><u>STEP 3:</b></u>Payment in full for CargocontainersTP</p>
+<p font-size:20px><b><u>STEP 4:</b></u>Production of your CargocontainersTP(10-12 Weeks)</p>
+<p font-size:20px><b><u>STEP 5:</b></u>Re-quote freight </p>
+<p font-size:20px><b><u>STEP 6:</b></u> Payment in full for freight </p>
+<p font-size:20px><b><u>STEP 7:</b></u>Delivery (offloading by others - CargocontainersTP guidance available) </p>
+<p font-size:20px><b><u>STEP 8:</b></u> Drink Time!</p><br>
+
+</ul>
+
+</div>
+<div style="width: 100%;
+ 	height: 100px;
+ 	text-align: center;">
+
+</div>
+<img src="C:\Users\HP PRO\3D Objects\pic\sss.jpg" width="48%" height="50%" alt="CargocontainersTP">
+<img src="C:\Users\HP PRO\3D Objects\pic\rrr.jpg" width="49%" height="50%" alt="CargocontainersTP">
+<div style="width: 100%;
+ 	height: 100px;
+ 	text-align: center;">
+
+
+<div style="width: 100%;
+	height: 100px;
+	text-align: center;">
+
+
+</div>
+<footer>
+<div style="width: 100%;
+  height: 220px;
+  text-align: center;
+  
+  background-color: #0C2340;">
+
+
+<br><br>
+
+
+<h5 style=" color:white; ">FOLLOW US</h5>
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+
+
+<h3 style=" color:white;">COPYRIGHT © CargocontainersTP 2024</h3>
+
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+<script> 
+      (function ($) {
+  $(function () {
+
+    $('.navbar ul li a:not(:only-child)').click(function (e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+
+    $('html').click(function () {
+      $('.nav-dropdown').hide();
+    });
+
+    $('#nav-toggle').click(function () {
+      $('.navbar ul').slideToggle();
+    });
+
+    $('#nav-toggle').on('click', function () {
+      this.classList.toggle('active');
+    });
+
+  });
+})(jQuery);
+</script>

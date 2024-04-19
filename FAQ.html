@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Faq|CargocontainersTP </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <style>
+
+  
+    body,
+html {
+  font-family: "Arial", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  padding: 18px 24px;
+  text-align: left;
+}
+
+.content p {
+  margin-top: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.6em;
+}
+ 
+
+.navigation-bar-container {
+  position: fixed;
+  height: 60px;
+  background: #F3f3f3;
+  z-index: 999;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.logo-container {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.logo-container a,
+.logo-container a:visited {
+  color: #FF0000 ,#990000;
+  font-family: revert-layer;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  z-index: 9999;
+}
+
+.navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.navbar ul li a,
+.navbar ul li a:visited {
+  display: block;
+  padding: 0px 20px;
+  line-height: 60px;
+  background: #F3f3f3;
+  color: darkred;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: ;
+  text-decoration: none;
+
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:visited:hover {
+  background: #FBCEB1;
+  color: #darkred;
+}
+
+.navbar ul li ul li {
+  min-width: 190px;
+}
+
+.navbar ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  background: #262626;
+  height: 60px;
+  width: 60px;
+  display: none;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:after,
+#nav-toggle span:before {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span::before {
+  top: -10px;
+}
+
+#nav-toggle.active span {
+  background: transparent;
+}
+
+#nav-toggle.active span:after,
+#nav-toggle.active span:before {
+  top: 0px;
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 790px) {
+  .nav-mobile {
+    display: block;
+  }
+  .navbar {
+    width: 100%;
+    padding: 70px 0px 0px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    float: none;
+  }
+  .navbar ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  .navbar ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter { 
+  color: white;
+}
+
+
+.fa-linkedin {
+  color: white;
+}
+.fa-pinterest {
+  color: white;
+}
+
+  </style>
+  <body style="background-color: ;">
+    <div class="navigation-bar-container">
+      <div class="nav-container">
+        <div class="logo-container">
+          <i><a href="#">CargocontainersTP</a></i>
+        </div>
+        <div class="navbar">
+          <div class="nav-mobile">
+            <a href="#" id="nav-toggle"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="Index.html">HOME</a></li>
+           
+            <li>
+              <a href="#">ABOUT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="About.html">ABOUT </a></li>
+                <li><a href="faq.html">FAQ'S</a></li>
+                <li><a href="process.html">PROCESS</a></li>
+                
+                
+              </ul>
+            </li>
+            <li><a href="product.html">PRODUCT</a></li>
+             <li>
+              <a href="#">CONTACT <i class="fa fa-caret-down"></i></a>
+              <ul class="nav-dropdown">
+                <li><a href="Contact.html">CONTACT (US)</a></li>
+                <li><a href="Contact.html">CONTACT (CA)</a></li>
+                
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\22.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="C:\Users\HP PRO\3D Objects\pic\44.jpg" width="100%" height="500" alt="CargocontainersTP">
+        <div class="text"></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+      <span class="dot" onclick="currentSlide()"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 6000); // Change image every 5 seconds
+      }
+    </script>
+
+ </div> 
+<div style="   margin: auto;
+  width: 85%;">
+<hr class="rounded"><br><br>
+<b style="font-size:30px; text-align: center;" >FAQ’S AND MORE INFORMATION</b><br>
+<p style=" font-size:20px">If you did not find the answers you are looking for below, contact us and a local representative will be in touch shortly to help.</p><br><br>
+<b><p style="font-size:20px">Is the $2,500 reservation deposit refundable?</b> Yes, the reservation is refundable less a 10% fee..</p><br>
+<b><p style="font-size:20px">Once i pay my deposit what's next?</b> Once the reservation deposit is paid, a CargocontainersTP representative will be in touch to confirm shipping rates, logistics and to finalize your exterior color and upgrade selections. From there, a contract will be sent to you to complete the order and pay for the remainder of the unit and shipping.</p><br>
+<b><p style="font-size:20px">Do i need building permit for Cargocontainer</b> The Cargocontainer is considered a movable structure and is under 100 sqft which generally is exempt from permit requirements.</p><br>
+<b><p style="font-size:20px">Do i need a foundation?</b> The Cargocontainer can be set on a slab, foundation blocks or crushed gravel.</p><br>
+<b><p style="font-size:20px">How do i connect my Cargocontainer to power?</b> The Cargocontainer comes with 3’ attached exterior cord for you to connect to an extension cord and plug into a dedicated 110v circuit on the exterior of your house.  If you choose the Heating/Cooling upgrade option you will need to have an electrician connect the Cargocontainer to a panel. </p><br>
+<b><p style="font-size:20px">How do I upload Cargocontainer?</b> The Cargocontainer is delivered on a flatbed truck to your property. A forklift, zoom boom or crane can be used to unload your Cargocontainer. It will be sitting on 4x4 blocks.</p><br>
+<b><p style="font-size:20px">Can i have CargocontainersTP coordinate the logistica from the factory to my backyard?</b> Yes! The cost for CargocontainersTP to coordinate is $1,000 and cost + 15%.</p><br>
+<b><p style="font-size:20px">What is the warranty?</b> The Cargocontainer comes with a 1 year warranty.</p><br>
+<b><p style="font-size:20px">Can i customize the Cargocontainer?</b> The styling and upgrades are fixed to create a streamlined and predictable process. Once it’s in your backyard, feel free to decorate it to your liking.</p><br>
+<b><p style="font-size:20px">What f;ooring is included?</b> Luxury vinyl plank flooring - Light.</p><br>
+<b><p style="font-size:20px">What is the interior paint?</b> Benjamin Moore Chantilly Lace.</p><br>
+<b><p style="font-size:20px">How long does it take to get a CargocontainersTP?</b> From design through to permits and completion it typically takes 10-12 months. Permits vary by jurisdiction and can be as quick as 1 month or as long as 6+ months. The quicker you begin the pre-construction phase the sooner you can have your home! It typically only takes us 10-12 weeks to actually build your home.</p><br>
+<b><p style="font-size:20px">What can a CargocontainersTP be used for?</b> A CargocontainersTP is simply a living space. A Home, a rental suite, office, ADU, guest house, granny suite, in-law suite, cabin or cottage.</p><br>
+<b><p style="font-size:20px">What is a CargocontainersTP built with?</b> A CargocontainersTP is built with an engineered steel frame and Corten Steel (container) siding that are precisely finished with high end materials and highly efficient systems.</p><br>
+<b><p style="font-size:20px">How long does it take to get a CargocontainersTP?</b> From design through to permits and completion it typically takes 10-12 months. Permits vary by jurisdiction and can be as quick as 1 month or as long as 6+ months. The quicker you begin the pre-construction phase the sooner you can have your home! It typically only takes us 10-12 weeks to actually build your home.</p><br>
+<hr>
+</div>
+<br><br><br><br>
+
+
+<br><br>
+</div>
+<footer>
+<div style="width: 100%;
+  height: 220px;
+  text-align: center;
+  
+  background-color: #0C2340;">
+
+
+<br><br>
+
+
+<h5 style=" color:white; ">FOLLOW US</h5>
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+
+
+<h3 style=" color:white;">COPYRIGHT © CargocontainersTP 2024</h3>
+
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+<script> 
+      (function ($) {
+  $(function () {
+
+    $('.navbar ul li a:not(:only-child)').click(function (e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+
+    $('html').click(function () {
+      $('.nav-dropdown').hide();
+    });
+
+    $('#nav-toggle').click(function () {
+      $('.navbar ul').slideToggle();
+    });
+
+    $('#nav-toggle').on('click', function () {
+      this.classList.toggle('active');
+    });
+
+  });
+})(jQuery);
+</script>
